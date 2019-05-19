@@ -1,0 +1,14 @@
+html {
+  background-color: #3366ff;
+  font-size: 20px;
+}
+
+div {
+  background: #ffff00;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+h1 {
+	text-shadow: 1px 1px black;
+}
