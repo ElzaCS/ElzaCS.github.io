@@ -1,0 +1,94 @@
+.jumbotron  {
+  background-image: url("https://images.unsplash.com/photo-1564397286696-5dba4999cf29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2074&q=80");
+  background-size: 1600px 400px;
+  color: white;
+  background-color: grey;
+  height: 700px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 50px;
+  font-family: 'Anton';
+  animation-name: news;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes news {
+  0% {top: 0px;-webkit-transform: translateX(-100%);}
+  50% {-webkit-transform: translateX(0%);}
+  100% {top: 200px; background-color: black;background-image: url("https://images.unsplash.com/photo-1564397286696-5dba4999cf29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2074&q=80");}
+}
+.blockquote{
+	align-items: right;
+}
+mark{
+	background-color: black;
+	color: white;
+}
+
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+.who{
+	text-align: center;
+	font-size: 64px;
+}
+ #navbar {
+  overflow: hidden;
+  background-color: black; /*#333;*/
+  color: white;
+  z-index: 10;
+  text-align: right;
+}
+.dropdown{
+	z-index: 20;
+}
+
+/*.navbar-header{
+	height: 100px;
+}*/
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: blue; /*none;*/
+  font-size: 17px;
+  background-color: black; /*#333;*/
+  color: white;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black; /*#333;*/
+  color: white;
+}
