@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 
 class About extends Component {
   render() {
@@ -18,35 +20,20 @@ class About extends Component {
 
     return (
       <section id="about">
-      <div className="row">
-         <div className="three columns">
-            <img className="profile-pic"  src={profilepic} alt="Nordic Giant Profile Pic" />
-         </div>
-         <div className="nine columns main-col">
-            <h2>About Me</h2>
-
-            <p>{bio}</p>
-            <div className="row">
-               <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-						   <span>{name}</span><br />
-						   <span>{street}<br />
-						         {city} {state}, {zip}
-                   </span><br />
-						   <span>{phone}</span><br />
-                     <span>{email}</span>
-					   </p>
-               </div>
-               <div className="columns download">
-                  <p>
-                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-            </div>
-         </div>
-      </div>
-
+      {/* <div className="row">
+         <div className="nine columns main-col"> */}
+         <Grid container spacing={3}>
+            <Grid item xs={6}>
+            <h2>We are the world’s 4th largest independent communications & creative agency</h2>
+            <p>We’re data-driven communications mavericks, deeply rooted in technology. We pride ourselves in being brand custodians who understand the importance of your story</p>
+            </Grid>
+         <Grid container spacing={6}>
+            <h2>WE’RE MOVING THE MARKETPLACE FORWARD</h2>
+            <p>We thrive on building brands through outstanding storytelling & help you communicate with the people that matter most</p>
+      </Grid>
+      </Grid>
+         {/* </div>
+      </div> */}
    </section>
     );
   }

@@ -1,9 +1,10 @@
 {
   "name": "personalportfolio",
   "version": "0.1.0",
-  "homepage":"./",
+  "homepage": "http://elzacs.github.io/react-nice-resume",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.10.2",
     "anix": "^0.3.3",
     "jquery": "^3.2.1",
     "particles-bg": "^2.3.12",
@@ -16,6 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
