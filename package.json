@@ -1,7 +1,7 @@
 {
   "name": "personalportfolio",
   "version": "0.1.0",
-  "homepage": "http://elzacs.github.io/react-nice-resume/.",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.10.2",
