@@ -25,7 +25,7 @@ class Header extends Component {
          <ul id="nav" className="nav">
             <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
             <li><a className="smoothscroll" href="#about">About</a></li>
-	         <li><a className="smoothscroll" href="#resume">Resume</a></li>
+	         <li><a className="smoothscroll" href="#resume">Expertise</a></li>
             <li><a className="smoothscroll" href="#portfolio">Works</a></li>
             <li><a className="smoothscroll" href="#contact">Contact</a></li>
          </ul>
@@ -37,10 +37,10 @@ class Header extends Component {
             <h1 className="responsive-headline">WE ARE RUDER FINN</h1>
             <h3>Transforming businesses, Moving marketplaces, Socializing Technology,  Fiercely pursuing what’s next!</h3>
             <hr />
-            <ul className="social">
+            {/* <ul className="social">
                <a href={project} className="button btn project-btn"><i className="fa fa-book"></i>Project</a>
                <a href={github} className="button btn github-btn"><i className="fa fa-github"></i>Github</a>
-            </ul>
+            </ul> */}
          </div>
       </div>
 

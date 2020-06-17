@@ -20,21 +20,15 @@ class About extends Component {
 
     return (
       <section id="about">
-      {/* <div className="row">
-         <div className="nine columns main-col"> */}
-         <Grid container spacing={3}>
-            <Grid item xs={6}>
-            <h2>We are the world’s 4th largest independent communications & creative agency</h2>
-            <p>We’re data-driven communications mavericks, deeply rooted in technology. We pride ourselves in being brand custodians who understand the importance of your story</p>
-            </Grid>
-         <Grid container spacing={6}>
-            <h2>WE’RE MOVING THE MARKETPLACE FORWARD</h2>
-            <p>We thrive on building brands through outstanding storytelling & help you communicate with the people that matter most</p>
-      </Grid>
-      </Grid>
-         {/* </div>
-      </div> */}
-   </section>
+        <div id="main">
+            <div class="box blue"><div class="responsive-headline text i">We’re data-driven communications mavericks, deeply rooted in technology. </div></div>
+            <div class="box green"><div class="responsive-headline text ii">We are the world’s 4th largest independent communications & creative agency</div></div>
+            <div class="box red"><div class="responsive-headline text iii">We pride ourselves in being brand custodians who understand the importance of your story</div></div>
+            <div class="box two"><div class="responsive-headline text iv">We thrive on building brands through outstanding storytelling</div></div>
+            <div class="box three"><div class="responsive-headline text v">We help you communicate with the people that matter most</div></div>
+        </div>
+         
+      </section>
     );
   }
 }

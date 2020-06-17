@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Expertise from './Expertise';
 
 class Resume extends Component {
 
@@ -41,34 +42,28 @@ class Resume extends Component {
       <section id="resume">
 
       <div className="row education">
-         <div className="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
+         {/* <h1 className="responsive-headline"><center>Scope</center></h1><br></br> */}
 
-         <div className="nine columns main-col">
-            <div className="row item">
-               <div className="twelve columns">
-                 {education}
-               </div>
-            </div>
+         <div className="twelve columns main-col">
+         <img src={require('./icons.png')} />
          </div>
       </div>
 
 
       <div className="row work">
 
-         <div className="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
+      <h2 className="responsive-headline"><center>Our Expertise</center></h2><br></br>
 
-         <div className="nine columns main-col">
+         {/* <div className="nine columns main-col">
           {work}
-        </div>
+        </div> */}
+        <Expertise />
+        
     </div>
 
 
 
-      <div className="row skill">
+      {/* <div className="row skill">
 
          <div className="three columns header-col">
             <h1><span>Skills</span></h1>
@@ -85,7 +80,7 @@ class Resume extends Component {
 					</ul>
 				</div>
 			</div>
-      </div>
+      </div> */}
    </section>
     );
   }
