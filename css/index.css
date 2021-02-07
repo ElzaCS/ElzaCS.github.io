@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+
+.parent_div{
+    background-image: url("../images/bg1.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flexbox;
+    justify-content: center;
+}
+
+.profile_div{
+    z-index: 1;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+}
